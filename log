@@ -2,3 +2,20 @@ Tue 21 Mar 2023 06:32:57 PM UTC:
  tests:  0|6
 total_score: 0/70
 691573f
+Wed 22 Mar 2023 11:38:11 PM UTC: 
+ list.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘createList’:
+list.c:34:3: error: expected expression before ‘return’
+   34 |   return listaEnlazadaDoble;
+      |   ^~~~~~
+list.c:32:9: error: variable ‘listaEnlazadaDoble’ set but not used [-Werror=unused-but-set-variable]
+   32 |   List *listaEnlazadaDoble = (List *) malloc(sizeof(List));
+      |         ^~~~~~~~~~~~~~~~~~
+list.c:35:1: error: control reaches end of non-void function [-Werror=return-type]
+   35 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+4051a06

@@ -29,7 +29,9 @@ Node * createNode(void * data) {
 }
 
 List * createList() {
-     return NULL;
+  List *listaEnlazadaDoble = (List *) malloc(sizeof(List));
+  listaEnlazadaDoble =
+  return listaEnlazadaDoble;
 }
 
 void * firstList(List * list) {
