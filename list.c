@@ -29,9 +29,15 @@ Node * createNode(void * data) {
 }
 
 List * createList() {
-  List *listaEnlazadaDoble = (List *) malloc(sizeof(List));
-  listaEnlazadaDoble =
-  return listaEnlazadaDoble;
+  List *listaEnlazadaCircularDoble = (List *) malloc(sizeof(List));
+  if (listaEnlazadaCircularDoble == NULL)
+      exit(EXIT_FAILURE);
+  
+  listaEnlazadaCircularDoble->head = NULL;
+  listaEnlazadaCircularDoble->tail = NULL;
+  listaEnlazadaCircularDoble->current = NULL;
+  
+  return listaEnlazadaCircularDoble;
 }
 
 void * firstList(List * list) {
