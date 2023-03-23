@@ -504,3 +504,17 @@ list.c:105:6: note: declared here
 cc1: all warnings being treated as errors
 Compilation failed
 0aba23b
+Thu 23 Mar 2023 01:38:47 AM UTC: 
+ list.c | 5 +----
+ 1 file changed, 1 insertion(+), 4 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘pushCurrent’:
+list.c:108:3: error: this ‘if’ clause does not guard... [-Werror=misleading-indentation]
+  108 |   if (list->current == NULL || list->current->next == NULL)
+      |   ^~
+list.c:111:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+  111 |     nuevoNodo->next = list->current->next;
+      |     ^~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+502ae10
