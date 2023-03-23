@@ -40,11 +40,13 @@ List * createList() {
   return listaEnlazadaCircularDoble;
 }
 
-Pelicula * firstList(List * list) {
-  Pelicula *dato = list->head;
+void * firstList(List * list) {
+  if (list->head == NULL)
+    return NULL;
   
+  list->current = list->head;
   
-  return dato;
+  return list->current->data;
 }
 
 void * nextList(List * list) {
