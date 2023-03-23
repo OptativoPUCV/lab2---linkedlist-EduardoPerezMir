@@ -25,3 +25,29 @@ Wed 22 Mar 2023 11:53:56 PM UTC:
  tests:  1|5
 total_score: 10/70
 5feb404
+Thu 23 Mar 2023 12:09:12 AM UTC: 
+ list.c | 7 +++++--
+ 1 file changed, 5 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+list.c:43:1: error: unknown type name ‘Pelicula’
+   43 | Pelicula * firstList(List * list) {
+      | ^~~~~~~~
+list.c:43:12: error: conflicting types for ‘firstList’; have ‘int *(List *)’ {aka ‘int *(struct List *)’}
+   43 | Pelicula * firstList(List * list) {
+      |            ^~~~~~~~~
+In file included from list.c:4,
+                 from test.c:5:
+list.h:8:8: note: previous declaration of ‘firstList’ with type ‘void *(List *)’ {aka ‘void *(struct List *)’}
+    8 | void * firstList(List * list);
+      |        ^~~~~~~~~
+In file included from test.c:5:
+list.c: In function ‘firstList’:
+list.c:44:3: error: unknown type name ‘Pelicula’
+   44 |   Pelicula *dato = list->head;
+      |   ^~~~~~~~
+list.c:44:20: error: initialization of ‘int *’ from incompatible pointer type ‘Node *’ [-Werror=incompatible-pointer-types]
+   44 |   Pelicula *dato = list->head;
+      |                    ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+7026ed6
