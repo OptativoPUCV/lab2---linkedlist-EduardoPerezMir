@@ -90,3 +90,9 @@ Thu 23 Mar 2023 12:22:42 AM UTC:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 35fba5c
+Thu 23 Mar 2023 12:23:57 AM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  2|5
+total_score: 15/70
+dd35284
