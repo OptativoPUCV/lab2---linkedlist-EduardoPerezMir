@@ -77,15 +77,23 @@ void * prevList(List * list) {
 }
 
 void pushFront(List * list, void * data) {
-  if (list->head == NULL)
-    return;
-  
   Node *nuevoNodo = (Node *) malloc(sizeof(Node));
   nuevoNodo = createNode(data);
-
-  nuevoNodo->next = list->head;
-  list->head = nuevoNodo;
-  nuevoNodo->prev = NULL;
+  
+  if (list->head == NULL)
+  {
+    nuevoNodo->next = nuevoNodo;
+    nuevoNodo->prev = nuevoNodo;
+    list->head = nuevoNodo;
+  }
+  else
+  {
+    nuevoNodo->next = list->head;
+    nuevoNodo->prev = list->prev;
+    list->head->prev->next = nuevoNodo;
+    list->head->prev = nuevoNodo;
+    list->head = nuevoNodo;
+  }
 }
 
 void pushBack(List * list, void * data) {

@@ -164,3 +164,13 @@ Thu 23 Mar 2023 12:40:49 AM UTC:
  tests:  9|3
 total_score: 35/70
 3f4b3db
+Thu 23 Mar 2023 12:46:56 AM UTC: 
+ list.c | 16 ++++++++++++----
+ 1 file changed, 12 insertions(+), 4 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘pushFront’:
+list.c:92:27: error: ‘List’ {aka ‘struct List’} has no member named ‘prev’
+   92 |     nuevoNodo->prev = list->prev;
+      |                           ^~
+Compilation failed
+5f551f3
