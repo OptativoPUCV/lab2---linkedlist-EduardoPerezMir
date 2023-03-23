@@ -107,7 +107,7 @@ void pushCurrent(List * list, void * data) {
   
   if (list->head == NULL ||  list->current == NULL)
   {
-    pushFront(nuevoNodo);
+    pushFront(list, data);
   }
   else
   {
