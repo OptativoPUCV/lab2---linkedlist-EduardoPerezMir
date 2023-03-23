@@ -107,9 +107,7 @@ void pushCurrent(List * list, void * data) {
   
   if (list->head == NULL ||  list->current == NULL)
   {
-    nuevoNodo->next = nuevoNodo;
-    nuevoNodo->prev = nuevoNodo;
-    list->head = nuevoNodo;
+    pushfront(nuevoNodo);
   }
   else
   {

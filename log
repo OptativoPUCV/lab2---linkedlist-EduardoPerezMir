@@ -365,3 +365,15 @@ Thu 23 Mar 2023 01:24:31 AM UTC:
  1 file changed, 1 deletion(-)
  tests:  0|0
 0d798b8
+Thu 23 Mar 2023 01:25:34 AM UTC: 
+ list.c | 4 +---
+ 1 file changed, 1 insertion(+), 3 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘pushCurrent’:
+list.c:110:5: error: implicit declaration of function ‘pushfront’; did you mean ‘pushFront’? [-Werror=implicit-function-declaration]
+  110 |     pushfront(nuevoNodo);
+      |     ^~~~~~~~~
+      |     pushFront
+cc1: all warnings being treated as errors
+Compilation failed
+ecf95a7
