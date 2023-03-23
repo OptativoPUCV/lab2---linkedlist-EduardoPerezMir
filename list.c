@@ -29,15 +29,15 @@ Node * createNode(void * data) {
 }
 
 List * createList() {
-  List *lista = (List *) malloc(sizeof(List));
-  if (lista == NULL)
+  List *listaEnlazada = (List *) malloc(sizeof(List));
+  if (listaEnlazada == NULL)
       return NULL;
   
   listaEnlazada->head = NULL;
   listaEnlazada->tail = NULL;
   listaEnlazada->current = NULL;
   
-  return listaEnlazadaCircularDoble;
+  return listaEnlazada;
 }
 
 void * firstList(List * list) {
