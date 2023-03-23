@@ -94,7 +94,6 @@ void pushFront(List * list, void * data) {
   
   nuevoNodo->prev=NULL;
   
-  list->tail = nuevoNodo;
 }
 
 void pushBack(List * list, void * data) {
