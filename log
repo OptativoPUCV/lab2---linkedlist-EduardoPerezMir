@@ -304,3 +304,13 @@ Thu 23 Mar 2023 01:07:08 AM UTC:
  tests:  10|2
 total_score: 45/70
 5f355ed
+Thu 23 Mar 2023 01:08:45 AM UTC: 
+ list.c | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘pushCurrent’:
+list.c:117:25: error: ‘List’ {aka ‘struct List’} has no member named ‘next’
+  117 |   nuevoNodo->next = list->next->next;
+      |                         ^~
+Compilation failed
+1ad7529
