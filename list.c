@@ -29,13 +29,13 @@ Node * createNode(void * data) {
 }
 
 List * createList() {
-  List *listaEnlazadaCircularDoble = (List *) malloc(sizeof(List));
-  if (listaEnlazadaCircularDoble == NULL)
-      exit(EXIT_FAILURE);
+  List *lista = (List *) malloc(sizeof(List));
+  if (lista == NULL)
+      return NULL;
   
-  listaEnlazadaCircularDoble->head = NULL;
-  listaEnlazadaCircularDoble->tail = NULL;
-  listaEnlazadaCircularDoble->current = NULL;
+  listaEnlazada->head = NULL;
+  listaEnlazada->tail = NULL;
+  listaEnlazada->current = NULL;
   
   return listaEnlazadaCircularDoble;
 }
