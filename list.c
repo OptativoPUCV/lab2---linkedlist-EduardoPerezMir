@@ -50,7 +50,7 @@ void * firstList(List * list) {
 }
 
 void * nextList(List * list) {
-  if (list->head)
+  if (list->current == NULL || list->current->next == NULL)
     return NULL;
   
   list->current = list->current->next;
@@ -105,7 +105,7 @@ void pushBack(List * list, void * data) {
 void pushCurrent(List * list, void * data) {
   Node *nuevoNodo = createNode(data);
   
-  if (list->head == NULL)
+  if (list->head == NULL ||  list->current == NULL)
   {
     nuevoNodo->next = nuevoNodo;
     nuevoNodo->prev = nuevoNodo;
