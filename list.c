@@ -161,7 +161,7 @@ void * popCurrent(List * list) {
     list->current->next->prev = list->current->prev;
   }
   
-  free(L->current);
+  free(list->current);
   
   return dato;
 }
