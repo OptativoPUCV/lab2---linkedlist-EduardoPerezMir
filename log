@@ -330,3 +330,8 @@ list.c:80:3: error: ‘nuevoNodo’ undeclared (first use in this function)
 list.c:80:3: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 64a1baf
+Thu 23 Mar 2023 01:12:27 AM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|0
+4d0f1e4
