@@ -104,7 +104,9 @@ void pushBack(List * list, void * data) {
 
 void pushCurrent(List * list, void * data) {
   Node *nuevoNodo = createNode(data);
-
+  if (list->head == NULL || list->current == NULL || list->current->next == NULL)
+    pushFront(list, data);
+  
   nuevoNodo->next = list->current->next;
   nuevoNodo->prev = list->current;
   list->current->next->prev = nuevoNodo;
