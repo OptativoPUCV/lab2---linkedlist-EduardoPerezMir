@@ -119,7 +119,11 @@ void pushCurrent(List * list, void * data) {
     return;
   }
   
-
+  nuevoNodo->prev = list->current;
+  list->current->next = nuevoNodo;
+  nuevoNodo->next = list->current->next;
+  list->current->next->prev = nuevoNodo;
+  
 }
 
 void * popFront(List * list) {
