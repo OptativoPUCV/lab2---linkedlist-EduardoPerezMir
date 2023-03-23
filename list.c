@@ -145,7 +145,6 @@ void * popCurrent(List * list) {
     list->tail->next = list->head;
     return dato;
   }
-  if ()
   
     return NULL;
 }
