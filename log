@@ -419,3 +419,14 @@ Thu 23 Mar 2023 01:27:47 AM UTC:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 9438813
+Thu 23 Mar 2023 01:28:20 AM UTC: 
+ list.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘pushCurrent’:
+list.c:106:9: error: unused variable ‘nuevoNodo’ [-Werror=unused-variable]
+  106 |   Node *nuevoNodo = createNode(data);
+      |         ^~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+ca7dcb2
