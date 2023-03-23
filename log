@@ -618,3 +618,17 @@ list.c:143:1: error: control reaches end of non-void function [-Werror=return-ty
 cc1: all warnings being treated as errors
 Compilation failed
 a3f9c0d
+Thu 23 Mar 2023 02:23:56 AM UTC: 
+ list.c | 8 ++++++++
+ 1 file changed, 8 insertions(+)
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:148:7: error: expected expression before ‘)’ token
+  148 |   if ()
+      |       ^
+list.c:151:1: error: control reaches end of non-void function [-Werror=return-type]
+  151 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+d89b53f
