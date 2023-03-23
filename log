@@ -226,3 +226,14 @@ Thu 23 Mar 2023 12:53:02 AM UTC:
  tests:  9|3
 total_score: 35/70
 42e0b19
+Thu 23 Mar 2023 12:55:58 AM UTC: 
+ list.c | 18 ++++++------------
+ 1 file changed, 6 insertions(+), 12 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘pushFront’:
+list.c:85:24: error: ‘n’ undeclared (first use in this function)
+   85 |     list->head->prev = n;
+      |                        ^
+list.c:85:24: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+38ca7a2
