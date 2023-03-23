@@ -319,3 +319,14 @@ Thu 23 Mar 2023 01:09:00 AM UTC:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 405dce2
+Thu 23 Mar 2023 01:12:18 AM UTC: 
+ list.c | 1 -
+ 1 file changed, 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘pushFront’:
+list.c:80:3: error: ‘nuevoNodo’ undeclared (first use in this function)
+   80 |   nuevoNodo = createNode(data);
+      |   ^~~~~~~~~
+list.c:80:3: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+64a1baf
