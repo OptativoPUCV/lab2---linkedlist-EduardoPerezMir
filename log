@@ -475,3 +475,12 @@ Thu 23 Mar 2023 01:37:00 AM UTC:
  tests:  10|2
 total_score: 45/70
 696a667
+Thu 23 Mar 2023 01:37:28 AM UTC: 
+ list.c | 6 ------
+ 1 file changed, 6 deletions(-)
+In file included from test.c:5:
+list.c:116:1: error: expected identifier or ‘(’ before ‘}’ token
+  116 | }
+      | ^
+Compilation failed
+7632fd1
